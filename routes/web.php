@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use \App\Http\Controllers\FilmController;
+use \App\Http\Controllers\GenreController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +17,8 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::resource('films', FilmController::class);
+Route::resource('genres', GenreController::class);

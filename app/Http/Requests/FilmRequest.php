@@ -24,7 +24,10 @@ class FilmRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            "name" => 'required',
+            "photo" => 'required',
+            "genre_id" => 'required'
         ];
+
     }
 }

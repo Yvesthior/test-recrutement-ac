@@ -26,7 +26,7 @@
                 </a></li>
             <li><a href="/">Acceuil</a></li>
             <li><a href="/user/{id}/favoris">Favoris</a></li>
-            <li><a href="/films">Films</a></li>
+            <li><a href="{{route('films.index')}}">Films</a></li>
             <li><a href="/genres">Genres</a></li>
             <li><a href="/users">Utilisateurs</a></li>
             <li><a href="/login">Connexion</a></li>
