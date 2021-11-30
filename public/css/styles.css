@@ -96,28 +96,83 @@ body {
     flex-direction: column;
 }
 
-.card {
-    /* Add shadows to create the "card" effect */
-    width: 60%;
-    margin-bottom: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+
+
+.title {
+    color: grey;
+    font-size: 18px;
 }
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: fill;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    text-align: center;
+    width: 80%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+
+
+
+.card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: .75rem;
+}
+
+.tag + .tag {
+    margin-left: .5em;
+}
+
+.tag-blue {
+    background: #56CCF2;
+    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+    color: #fafafa;
+}
+
+.card__body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    width: 100%;
+}
+
 .card img {
     height: 200px;
 }
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Add some padding inside the card container */
-.container {
-    padding: 2px 16px;
-}
-/* END Styling film cards */
-
 
 @media only screen and (min-width: 680px) {
     .nav__toggle {
@@ -144,5 +199,9 @@ body {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
     }
+}
+
+.pagination{
+    height: 100px;
 }
 

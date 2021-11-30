@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index() {
-        $films = Film::all();
+        $films = Film::with('genre')->paginate(10);
 
         return view('index', compact('films'));
     }
